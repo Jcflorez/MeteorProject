@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import { withTracker } from 'meteor/react-meteor-data';
 import ReactDOM from 'react-dom';
+import { Meteor } from 'meteor/meteor';
+
+import { Retos } from '../api/retos.js';
+import { Players } from '../api/players.js';
 
 import Reto from './Reto.jsx';
-import { Retos } from '../api/retos.js';
-
 import PlayerReto from './PlayerReto.jsx';
-
 import Player from './Player.jsx';
-import { Players } from '../api/players.js';
 import AccountsUIWrapper from '/imports/ui/AccountsUIWrapper';
-import { Meteor } from 'meteor/meteor';
  
 // App component - represents the whole app
 class AppReto extends Component {
